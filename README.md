@@ -1,6 +1,9 @@
 # HomeWork-2-Sorting-Searching
-Name: Shah Raiyan
+
+Name: Shah Rayan
+
 Programming Language: Java
+
 IDE / Editor: IntelliJ IDEA
 
 Original Array:
