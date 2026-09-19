@@ -38,7 +38,7 @@ public class Main{
     }
 
 
-    // Function : BubbleSort (returns int[])
+    // Method : BubbleSort (returns int[])
     public static int[] bubbleSort(int[] arr){
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
@@ -52,7 +52,7 @@ public class Main{
         return arr;
     }
 
-    //  Function : Merge Sort (returns int[])
+    // Method : Merge Sort (returns int[])
     public static int[] mergeSort(int[] arr, int left, int right) {
         if (left < right) {
             int middle = (left + right) / 2;
@@ -92,7 +92,7 @@ public class Main{
     }
 
 
-    // Function : Linear Search 
+    // Method : Linear Search 
     public static void linearSearch(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
@@ -105,7 +105,7 @@ public class Main{
         System.out.println("Target not found");
     }
 
-    //  Function : Binary Search
+    // Method : Binary Search
     public static void binarySearch(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;
