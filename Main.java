@@ -65,7 +65,7 @@ public class Main{
             int[] temp = new int[right - left + 1];
             int k = 0;
             while (i <= middle && j <= right) {
-                if (arr[i] < arr[j]) {
+                if (arr[i] <= arr[j]) {
                     temp[k] = arr[i];
                     i++;
                 } else {
