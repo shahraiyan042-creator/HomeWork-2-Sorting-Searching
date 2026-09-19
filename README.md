@@ -11,23 +11,23 @@ Original Array:
 
 ### Question 1
 
-The worst-case Big O time complexity of Bubble Sort is **O(n²)**.
+The worst-case Big O time complexity of Bubble Sort is O(n²).
 
 ### Question 2
 
-Bubble Sort has this time complexity because it has to repeatedly compare numbers next to each other. The nested loops cause the program to make many comparisons as the size of the array gets bigger.
+Bubble Sort has O(n²) time complexity because the outer loop goes through the array multiple times while the inner loop compares adjacent elements during every pass. Which produces n x n or O(n²) time complexity.
 
 ### Question 3
 
-With 10 elements, Bubble Sort would only need a relatively small number of comparisons. With 1,000 elements, the number of comparisons becomes much larger because O(n²) grows very quickly, so it would require roughly 10,000 times as many comparisons.
+With 10 elements, Bubble Sort would produce 10x10 or 100 comparisons. With 1,000 elements, the number of comparisons becomes 1000x1000 or 1000000 because O(n²) is exponential and  grows very quickly, so it would require roughly ( 1000000 / 100 ) or 10,000 times as many comparisons compared to 10 elements.
 
 ### Question 4
 
-The Big O time complexity of Merge Sort is **O(n log n)**.
+The Big O time complexity of Merge Sort is O(n log n).
 
 ### Question 5
 
-Merge Sort generally works better when there is a lot of data because it divides the array into smaller parts and sorts them. It has an **O(n log n)** time complexity, while Bubble Sort has **O(n²)**, so Bubble Sort takes many more comparisons as the amount of data increases.
+Merge Sort generally works better when there is a lot of data because it divides the array into smaller parts and sorts them. It has an O(n log n) time complexity, while Bubble Sort has O(n²), so Bubble Sort takes many more comparisons compared to Merge Sort in terms of processing larger amounts of data.
 
 ### Question 6
 
@@ -36,11 +36,11 @@ Merge Sort generally works better when there is a lot of data because it divides
 
 ### Question 7
 
-Linear Search has a Big O time complexity of **O(n)**. In the worst case, it may have to check every element in the array.
+Linear Search has a Big O time complexity of **O(n)**. In the worst case, it loops through every element in the array.
 
 ### Question 8
 
-Binary Search has a Big O time complexity of **O(log n)**. It is faster because it eliminates half of the remaining elements after each comparison.
+Binary Search has a Big O time complexity of **O(log n)**. It is faster because it finds the midpoint of a sorted array and disregards half of the remaining elements with each step.
 
 ### Question 9
 
@@ -48,11 +48,11 @@ Binary Search requires sorted data because it uses the middle value to decide wh
 
 ### Question 10
 
-I would use **Linear Search** if the data were not sorted. Linear Search can search through an unsorted array without needing to sort it first.
+I would use Linear Search if the data were not sorted. Linear Search is ideal as it loops through every element of the array and doesn't require the array to be sorted.
 
 ### Question 11
 
-I would use **Binary Search** for a very large sorted array. It is more efficient because it eliminates half of the remaining data each time, giving it an **O(log n)** time complexity.
+I would use **Binary Search** for a very large sorted array. It is more efficient because it has a O(log n) time complexity compared to Linear Search which has a O(n) time complexity.
 
 ## Part 12 — Algorithm Comparison Table
 
