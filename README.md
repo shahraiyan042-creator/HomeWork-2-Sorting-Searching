@@ -1,6 +1,10 @@
 # HomeWork-2-Sorting-Searching
+Name: Shah Raiyan
+Programming Language: Java
+IDE / Editor: IntelliJ IDEA
 
-## Part 4 — Bubble Sort Big O
+Original Array:
+23 44 30 65 42 22 43 77 89 67 40 91
 
 ### Question 1
 
@@ -14,10 +18,6 @@ Bubble Sort has this time complexity because it has to repeatedly compare number
 
 With 10 elements, Bubble Sort would only need a relatively small number of comparisons. With 1,000 elements, the number of comparisons becomes much larger because O(n²) grows very quickly, so it would require roughly 10,000 times as many comparisons.
 
----
-
-## Part 6 — Compare Bubble Sort and Merge Sort
-
 ### Question 4
 
 The Big O time complexity of Merge Sort is **O(n log n)**.
@@ -30,10 +30,6 @@ Merge Sort generally works better when there is a lot of data because it divides
 
 **Bubble Sort = O(n²)**
 **Merge Sort = O(n log n)**
-
----
-
-## Part 11 — Searching Questions
 
 ### Question 7
 
@@ -54,8 +50,6 @@ I would use **Linear Search** if the data were not sorted. Linear Search can sea
 ### Question 11
 
 I would use **Binary Search** for a very large sorted array. It is more efficient because it eliminates half of the remaining data each time, giving it an **O(log n)** time complexity.
-
----
 
 ## Part 12 — Algorithm Comparison Table
 
