@@ -1,45 +1,44 @@
 import java.util.Arrays;
-
 public class Main{
     public static void main(String[] args){
         // Original array
         int[] arr = {23, 44, 30, 65, 42, 22, 43, 77, 89, 67, 40, 91};
         System.out.println("Original Array: " + Arrays.toString(arr));
-        System.out.println("==========================================================================================");
+        System.out.println();
 
         // Bubble Sort
         int[] bubbleArray = Arrays.copyOf(arr, arr.length);//created new array using Arrays.copyOf() so original array remains unchanged;
         System.out.println("Bubble Sort Result: " + Arrays.toString(bubbleSort(bubbleArray)));
-        System.out.println("==========================================================================================");
+        System.out.println();
 
         // Merge Sort
         int[] mergeArray = Arrays.copyOf(arr, arr.length);//created new array using Arrays.copyOf() so original array remains unchanged;
         System.out.println("Merge Sort Result: " + Arrays.toString(mergeSort(mergeArray, 0, mergeArray.length - 1)));
-        System.out.println("==========================================================================================");
+        System.out.println();
 
         // Linear Search
         System.out.println("Linear Search : ");
-        System.out.println("Search 1:");
+        System.out.print("Searching for ");
         linearSearch(arr, 23);//output:Found at index 0
-        System.out.println("Search 2:");
+        System.out.print("Searching for ");
         linearSearch(arr, 91);//output:Found at index 11
-        System.out.println("Search 3:");
+        System.out.print("Searching for ");
         linearSearch(arr, 500);//output:Target not found
-        System.out.println("==========================================================================================");
+        System.out.println();
 
         //Binary Search
         // Uses bubbleArray, which was already sorted using Bubble Sort
         System.out.println("Binary Search : ");
-        System.out.println("Search 1:");
-        binarySearch(bubbleArray, 23);
-        System.out.println("Search 2:");
-        binarySearch(bubbleArray, 91);
-        System.out.println("Search 3:");
-        binarySearch(bubbleArray, 500);
+        System.out.print("Searching for ");
+        binarySearch(bubbleArray, 23);//output : Target found at index 1
+        System.out.print("Searching for ");
+        binarySearch(bubbleArray, 91);//output : Target found at index 11
+        System.out.print("Searching for ");
+        binarySearch(bubbleArray, 500);//output : Target not found
     }
 
 
-    // BubbleSort
+    // Function : BubbleSort (returns int[])
     public static int[] bubbleSort(int[] arr){
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
@@ -53,7 +52,7 @@ public class Main{
         return arr;
     }
 
-    //  Merge Sort
+    //  Function : Merge Sort (returns int[])
     public static int[] mergeSort(int[] arr, int left, int right) {
         if (left < right) {
             int middle = (left + right) / 2;
@@ -93,7 +92,7 @@ public class Main{
     }
 
 
-    // Linear Search : Includes most of the output text within function
+    // Function : Linear Search 
     public static void linearSearch(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
@@ -106,7 +105,7 @@ public class Main{
         System.out.println("Target not found");
     }
 
-    //  Binary Search
+    //  Function : Binary Search
     public static void binarySearch(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;
