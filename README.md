@@ -6,8 +6,7 @@ Programming Language: Java
 
 IDE / Editor: IntelliJ IDEA
 
-Original Array:
-23 44 30 65 42 22 43 77 89 67 40 91
+Original Array: [ 23, 44, 30, 65, 42, 22, 43, 77, 89, 67, 40, 91 ]
 
 ### Question 1
 
@@ -36,11 +35,11 @@ Merge Sort generally works better when there is a lot of data because it divides
 
 ### Question 7
 
-Linear Search has a Big O time complexity of **O(n)**. In the worst case, it loops through every element in the array.
+Linear Search has a Big O time complexity of O(n). In the worst case, it loops through every element in the array.
 
 ### Question 8
 
-Binary Search has a Big O time complexity of **O(log n)**. It is faster because it finds the midpoint of a sorted array and disregards half of the remaining elements with each step.
+Binary Search has a Big O time complexity of O(log n). It is faster because it finds the midpoint of a sorted array and disregards half of the remaining elements with each step.
 
 ### Question 9
 
@@ -52,7 +51,7 @@ I would use Linear Search if the data were not sorted. Linear Search is ideal as
 
 ### Question 11
 
-I would use **Binary Search** for a very large sorted array. It is more efficient because it has a O(log n) time complexity compared to Linear Search which has a O(n) time complexity.
+I would use Binary Search for a very large sorted array. It is more efficient because it has a O(log n) time complexity compared to Linear Search which has a O(n) time complexity.
 
 ## Part 12 — Algorithm Comparison Table
 
